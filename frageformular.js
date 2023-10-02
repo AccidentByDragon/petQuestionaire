@@ -56,7 +56,7 @@ while (isRunning === true) {
           catRead = true;
           console.log(`Katt blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${catProcent} %`);
           if (i === 0) {
-            highestResultPoints = "Katt " + scoresArray[i];
+            highestResultPoints = "Katt: " + scoresArray[i];
             highestResultProcent = catProcent;
           }
         }
@@ -64,7 +64,7 @@ while (isRunning === true) {
           rabitRead = true;
           console.log(`Kanin blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${kaninProcent} %`);
           if (i === 0) {
-            highestResultPoints = "Kanin " + scoresArray[i];
+            highestResultPoints = "Kanin: " + scoresArray[i];
             highestResultProcent = kaninProcent;
           }
         }
@@ -72,7 +72,7 @@ while (isRunning === true) {
           fishRead = true;
           console.log(`Fisk blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${fiskProcent} %`);
           if (i === 0) {
-            highestResultPoints = "Fisk " + scoresArray[i];
+            highestResultPoints = "Fisk: " + scoresArray[i];
             highestResultProcent = fiskProcent;
           }
         }
@@ -80,7 +80,7 @@ while (isRunning === true) {
           dogRead = true;
           console.log(`Hund blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${hundProcent} %`);
           if (i === 0) {
-            highestResultPoints = "Hund " + scoresArray[i];
+            highestResultPoints = "Hund: " + scoresArray[i];
             highestResultProcent = hundProcent;
           }
         }
@@ -89,7 +89,7 @@ while (isRunning === true) {
       const currentDate = Date();
       if (questionsAnswered => 15) {
         curUserName = prompt("Skriv in ditt namn: ").trim().toLowerCase();
-        compResults.curUSer[curUserName+ " Användare: "+compResults.totalUsers] = {
+        compResults.curUSer["Användare: "+compResults.totalUsers] = {
           namn: curUserName,
           totalResultatpoäng: highestResultPoints,
           totalResultatprocent: highestResultProcent + " %",
@@ -108,7 +108,7 @@ while (isRunning === true) {
         console.log(compResults.curUSer)
       }
       else {
-        console.log(`Det finns inga tidigare resultat`);
+        console.log(`Det finns inga tidigare resultat!`);
       }
       break;
     case 3:
