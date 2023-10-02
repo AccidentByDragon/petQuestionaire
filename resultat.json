@@ -1,17 +1,6 @@
 {
-  "totalUsers": 1,
+  "totalUsers": 0,
   "curUSer": {
-    "karl loe Användare: 0": {
-      "namn": "karl loe",
-      "totalResultatpoäng": "Katt 27",
-      "totalResultatprocent": "90 %",
-      "totalResultat": {
-        "cat": 27,
-        "rabit": 23,
-        "dog": 25,
-        "fish": 8
-      },
-      "date": "Mon Oct 02 2023 11:04:48 GMT+0200 (centraleuropeisk sommartid)"
-    }
+
   }
 }
