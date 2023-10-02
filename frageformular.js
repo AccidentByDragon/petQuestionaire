@@ -89,7 +89,7 @@ while (isRunning === true) {
       const currentDate = Date();
       if (questionsAnswered => 15) {
         curUserName = prompt("Skriv in ditt namn: ").trim().toLowerCase();
-        compResults.curUSer["Användare: "+compResults.totalUsers] = {
+        compResults.curUSer["Användare: " + compResults.totalUsers] = {
           namn: curUserName,
           totalResultatpoäng: highestResultPoints,
           totalResultatprocent: highestResultProcent + " %",
@@ -104,7 +104,7 @@ while (isRunning === true) {
       }
       break;
     case 2:
-      if (compResults.totalUsers!=0) {
+      if (compResults.totalUsers != 0) {
         console.log(compResults.curUSer)
       }
       else {
