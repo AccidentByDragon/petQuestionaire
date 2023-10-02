@@ -10,7 +10,8 @@ while (isRunning === true) {
   
   Välj ett alternativ:
   1. Gör Frågeformuläret:
-  2. Avlsuta:`);
+  2. Läs upp tidigare resultat:
+  3. Avlsuta:`);
 
   const userInput = Number(prompt().trim().toLowerCase());
   switch (userInput) {
@@ -26,13 +27,13 @@ while (isRunning === true) {
           scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers yes'].Rabit;
           scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers yes'].Dog;
           scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers yes'].Fish;
-          questionsAnswered = questionsAnswered+1;
+          questionsAnswered = questionsAnswered + 1;
         } else if (frSvar === `nej`) {
           scores.cat = scores.cat + questionsAndAnswersData[0].questions[i]['answers nej'].Cat;
           scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers nej'].Rabit;
           scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers nej'].Dog;
           scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers nej'].Fish;
-          questionsAnswered = questionsAnswered+1;
+          questionsAnswered = questionsAnswered + 1;
         } else {
           console.log(`Något blev fel eller så var ditt svar inte giltigt, frågeformuläret måstet tyvärr startas om`);
           break;
@@ -50,10 +51,10 @@ while (isRunning === true) {
       let rabitRead = false;
       let fishRead = false;
       let dogRead = false;
-      for (let i = 0; i < scoresArray.length; i++){
+      for (let i = 0; i < scoresArray.length; i++) {
         if (scoresArray[i] === scores.cat && catRead === false) {
           catRead = true;
-          console.log(`Katt blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${catProcent} %`);        
+          console.log(`Katt blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${catProcent} %`);
           if (i === 0) {
             highestResultPoints = "Katt " + scoresArray[i];
             highestResultProcent = catProcent;
@@ -88,14 +89,14 @@ while (isRunning === true) {
       const currentDate = Date();
       if (questionsAnswered => 15) {
         curUserName = prompt("Skriv in ditt namn: ").trim().toLowerCase();
-        compResults.curUSer[compResults.antalUsers] = {
-          namn: curUserName,          
+        compResults.curUSer[compResults.totalUsers] = {
+          namn: curUserName,
           totalResultatpoäng: highestResultPoints,
-          totalResultatprocent: highestResultProcent +" %",
+          totalResultatprocent: highestResultProcent + " %",
           totalResultat: scores,
           date: currentDate
         }
-        compResults.antalUsers++;
+        compResults.totalUsers++;
         fs.writeFile('resultat.json', JSON.stringify(compResults, null, 2), (err) => {
           if (err) throw err;
           console.log(`data written to file`)
@@ -103,6 +104,14 @@ while (isRunning === true) {
       }
       break;
     case 2:
+      if (compResults.totalUsers!=0) {
+        console.log(compResults.curUSer)
+      }
+      else {
+        console.log(`Det finns inga tidigare resultat`);
+      }
+      break;
+    case 3:
       isRunning = false;
       break;
     default:
