@@ -29,10 +29,10 @@ while (isRunning === true) {
           scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers yes'].Fish;
           questionsAnswered = questionsAnswered + 1;
         } else if (frSvar === `nej`) {
-          scores.cat = scores.cat + questionsAndAnswersData[0].questions[i]['answers nej'].Cat;
-          scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers nej'].Rabit;
-          scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers nej'].Dog;
-          scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers nej'].Fish;
+          scores.cat = scores.cat + questionsAndAnswersData[0].questions[i]['answers no'].Cat;
+          scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers no'].Rabit;
+          scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers no'].Dog;
+          scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers no'].Fish;
           questionsAnswered = questionsAnswered + 1;
         } else {
           console.log(`Något blev fel eller så var ditt svar inte giltigt, frågeformuläret måstet tyvärr startas om`);
