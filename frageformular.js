@@ -16,6 +16,8 @@ while (isRunning === true) {
   const userInput = Number(prompt().trim().toLowerCase());
   switch (userInput) {
     case 1:
+      console.log(`Du skall nu göra frågeformuläret, den består av 15 ja/nej frågor, resultaten kommer sedan att sparas`);
+      prompt(`tryck valfri knapp för att påbörja frågeformuläret:`);
       let questionsAnswered = 0
       let scores = { cat: 0, rabit: 0, dog: 0, fish: 0 };
       for (let i = 0; i < 15; i++) {
