@@ -112,7 +112,7 @@
         "Question": "Är du okej med att lyfta tyngder, så som Kattlådor etc?",
         "answers yes": {
         "Cat": 2,
-        "Rabit": 1,
+        "Rabit": 2,
         "Dog": 1,
         "Fish": 2
         },
@@ -154,7 +154,7 @@
         }
       },
       {
-        "Question": "Är du bekväm med att ditt husdjur låter mycket?",//
+        "Question": "Är du bekväm med att ditt husdjur låter mycket?",
         "answers yes": {
         "Cat": 2,
         "Rabit": 1,
@@ -162,7 +162,7 @@
         "Fish": 0
         },
         "answers nej": {
-        "Cat": 1,
+        "Cat": 0,
         "Rabit": 2,
         "Dog": 0,
         "Fish": 2
@@ -217,15 +217,15 @@
         "Question": "Är du villig att spendera mycket på leksaker för ditt Husdjur?",
         "answers yes": {
         "Cat": 0,
-        "Rabit": 2,
-        "Dog": 0,
+        "Rabit": 1,
+        "Dog": 2,
         "Fish": 2
         },
         "answers nej": {
         "Cat": 2,
-        "Rabit": 0,
+        "Rabit": 2,
         "Dog": 0,
-        "Fish": 2
+        "Fish": 0
         }
       }
     ],

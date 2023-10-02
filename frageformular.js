@@ -10,8 +10,7 @@ while (isRunning === true) {
   
   Välj ett alternativ:
   1. Gör Frågeformuläret:
-  2. Tidigare resultat:
-  3. Avlsuta:`);
+  2. Avlsuta:`);
 
   const userInput = Number(prompt().trim().toLowerCase());
   switch (userInput) {
@@ -39,10 +38,10 @@ while (isRunning === true) {
           break;
         }
       }
-      const catProcent = ((scores.cat / questionsAndAnswersData[0].Poäng.Cat.maxpoäng) * 100);
-      const kaninProcent = ((scores.rabit / questionsAndAnswersData[0].Poäng.Rabit.maxpoäng) * 100);
-      const fiskProcent = ((scores.fish / questionsAndAnswersData[0].Poäng.Fish.maxpoäng) * 100);
-      const hundProcent =((scores.dog / questionsAndAnswersData[0].Poäng.Dog.maxpoäng) * 100);
+      const catProcent = ((scores.cat / questionsAndAnswersData[0].Points.Cat.maxpoints) * 100);
+      const kaninProcent = ((scores.rabit / questionsAndAnswersData[0].Points.Rabit.maxpoints) * 100);
+      const fiskProcent = ((scores.fish / questionsAndAnswersData[0].Points.Fish.maxpoints) * 100);
+      const hundProcent = ((scores.dog / questionsAndAnswersData[0].Points.Dog.maxpoints) * 100);
       let highestResultPoints;
       let highestResultProcent;
       let scoresArray = [scores.cat, scores.rabit, scores.fish, scores.dog];
@@ -56,7 +55,7 @@ while (isRunning === true) {
           catRead = true;
           console.log(`Katt blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${catProcent} %`);        
           if (i === 0) {
-            highestResultPoints = "Katt" + scoresArray[i];
+            highestResultPoints = "Katt " + scoresArray[i];
             highestResultProcent = catProcent;
           }
         }
@@ -64,7 +63,7 @@ while (isRunning === true) {
           rabitRead = true;
           console.log(`Kanin blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${kaninProcent} %`);
           if (i === 0) {
-            highestResultPoints = "Kanin" + scoresArray[i];
+            highestResultPoints = "Kanin " + scoresArray[i];
             highestResultProcent = kaninProcent;
           }
         }
@@ -87,13 +86,12 @@ while (isRunning === true) {
 
       }
       const currentDate = Date();
-      // allt efter detta är i princip klar
       if (questionsAnswered => 15) {
         curUserName = prompt("Skriv in ditt namn: ").trim().toLowerCase();
         compResults.curUSer[compResults.antalUsers] = {
           namn: curUserName,          
           totalResultatpoäng: highestResultPoints,
-          totalResultatprocent: highestResultProcent +"%",
+          totalResultatprocent: highestResultProcent +" %",
           totalResultat: scores,
           date: currentDate
         }
@@ -105,20 +103,6 @@ while (isRunning === true) {
       }
       break;
     case 2:
-      console.log(`Här har du tidigare resultat:`);
-      if (compResults.antalUsers != 0) {
-        for (let i = 0; i > compResults.antalUsers; i++){
-          console.log(compResults.curUSer[i]);
-        }
-
-      }
-      else {
-          console.log(`Det finns inga tidagare resultat`);
-        }
-      
-        
-      break;
-    case 3:
       isRunning = false;
       break;
     default:
