@@ -1,17 +1,6 @@
 {
-  "totalUsers": 1,
+  "totalUsers": 0,
   "curUSer": {
-    "0": {
-      "namn": "karl",
-      "totalResultatpoäng": "Katt 27",
-      "totalResultatprocent": "90 %",
-      "totalResultat": {
-        "cat": 27,
-        "rabit": 23,
-        "dog": 25,
-        "fish": 8
-      },
-      "date": "Mon Oct 02 2023 10:57:39 GMT+0200 (centraleuropeisk sommartid)"
-    }
+
   }
 }
