@@ -38,6 +38,7 @@ while (isRunning === true) {
           questionsAnswered = questionsAnswered + 1;
         } else {
           console.log(`Något blev fel eller så var ditt svar inte giltigt, frågeformuläret måstet tyvärr startas om`);
+          prompt(`tryck valfri knapp för att fortsätta`);
           break;
         }
       }
@@ -113,6 +114,7 @@ while (isRunning === true) {
       else {
         console.log(`Det finns inga tidigare resultat!`);
       }
+      prompt(`tryck valfri knapp för att fortsätta:`);
       break;
     case 3:
       isRunning = false;
