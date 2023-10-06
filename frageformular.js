@@ -89,7 +89,7 @@ while (isRunning === true) {
 
       }
       const currentDate = Date();
-      if (questionsAnswered => 15) {
+      if (questionsAnswered >= 15) {
         curUserName = prompt("Skriv in ditt namn: ").trim().toLowerCase();
         compResults.curUSer["Användare: " + compResults.totalUsers] = {
           namn: curUserName,
