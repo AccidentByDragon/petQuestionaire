@@ -5,13 +5,13 @@
         "Question": "Vill du ha ett husdjur som är kjellig?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         }
@@ -20,13 +20,13 @@
         "Question": "Är du en aktiv person?",
         "answers yes": {
           "Cat": 1,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         }
@@ -35,13 +35,13 @@
         "Question": "Vill du har mer än ett husdjur?",
         "answers yes": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 2
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 0,
+          "Rabbit": 0,
           "Dog": 1,
           "Fish": 1
         }
@@ -50,13 +50,13 @@
         "Question": "Vill du ha ett husdjur som vill leka mycket?",
         "answers yes": {
           "Cat": 1,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 0,
+          "Rabbit": 0,
           "Dog": 0,
           "Fish": 2
         }
@@ -65,13 +65,13 @@
         "Question": "Har du mycket plats där du bor?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 1
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 1,
           "Fish": 2
         }
@@ -80,13 +80,13 @@
         "Question": "Vill du har ett husdjur med päls?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 1,
-          "Rabit": 0,
+          "Rabbit": 0,
           "Dog": 1,
           "Fish": 2
         }
@@ -95,13 +95,13 @@
         "Question": "Är du okej med att mata ditt husdjur med kött?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 0,
+          "Rabbit": 0,
           "Dog": 2,
           "Fish": 1
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         }
@@ -110,13 +110,13 @@
         "Question": "Är du okej med att lyfta tyngder, så som Kattlådor etc?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 1,
           "Fish": 2
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         }
@@ -125,13 +125,13 @@
         "Question": "Är du bekväm med att ditt husdjur använder din säng?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 1,
           "Fish": 2
         }
@@ -140,13 +140,13 @@
         "Question": "Ogillar du att ditt hem inte är snygt och prydligt?",
         "answers yes": {
           "Cat": 1,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         }
@@ -155,13 +155,13 @@
         "Question": "Är du bekväm med att ditt husdjur låter mycket?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         }
@@ -170,13 +170,13 @@
         "Question": "Vill du kunna vara ute med ditt husdjur?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 1,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 0,
           "Fish": 2
         }
@@ -185,13 +185,13 @@
         "Question": "Vill du ha ett husdjur som kräver din uppmärksamhet?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 2
         }
@@ -200,13 +200,13 @@
         "Question": "Är det viktigkt för dig att ditt husdjur ha en bra livslängd?",
         "answers yes": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 2,
           "Fish": 0
         },
         "answers no": {
           "Cat": 0,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 0,
           "Fish": 2
         }
@@ -215,13 +215,13 @@
         "Question": "Är du villig att spendera mycket på leksaker för ditt Husdjur?",
         "answers yes": {
           "Cat": 0,
-          "Rabit": 1,
+          "Rabbit": 1,
           "Dog": 2,
           "Fish": 2
         },
         "answers no": {
           "Cat": 2,
-          "Rabit": 2,
+          "Rabbit": 2,
           "Dog": 0,
           "Fish": 0
         }
@@ -229,19 +229,15 @@
     ],
     "Points": {
       "Cat": {
-        "points": 0,
         "maxpoints": 30
       },
-      "Rabit": {
-        "points": 0,
+      "Rabbit": {
         "maxpoints": 30
       },
       "Dog": {
-        "points": 0,
         "maxpoints": 30
       },
       "Fish": {
-        "points": 0,
         "maxpoints": 30
       }
     }

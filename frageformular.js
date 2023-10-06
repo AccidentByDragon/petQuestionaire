@@ -19,20 +19,20 @@ while (isRunning === true) {
       console.log(`Du skall nu göra frågeformuläret, den består av 15 ja/nej frågor, resultaten kommer sedan att sparas`);
       prompt(`tryck valfri knapp för att påbörja frågeformuläret:`);
       let questionsAnswered = 0
-      let scores = { cat: 0, rabit: 0, dog: 0, fish: 0 };
+      let scores = { cat: 0, rabbit: 0, dog: 0, fish: 0 };
       for (let i = 0; i < 15; i++) {
         console.log(questionsAndAnswersData[0].questions[i].Question);
         console.log(`svar ja eller nej`);
         let frSvar = (prompt().trim().toLowerCase());
         if (frSvar === `ja`) {
           scores.cat = scores.cat + questionsAndAnswersData[0].questions[i]['answers yes'].Cat;
-          scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers yes'].Rabit;
+          scores.rabbit = scores.rabbit + questionsAndAnswersData[0].questions[i]['answers yes'].Rabbit;
           scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers yes'].Dog;
           scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers yes'].Fish;
           questionsAnswered = questionsAnswered + 1;
         } else if (frSvar === `nej`) {
           scores.cat = scores.cat + questionsAndAnswersData[0].questions[i]['answers no'].Cat;
-          scores.rabit = scores.rabit + questionsAndAnswersData[0].questions[i]['answers no'].Rabit;
+          scores.rabbit = scores.rabbit + questionsAndAnswersData[0].questions[i]['answers no'].Rabbit;
           scores.dog = scores.dog + questionsAndAnswersData[0].questions[i]['answers no'].Dog;
           scores.fish = scores.fish + questionsAndAnswersData[0].questions[i]['answers no'].Fish;
           questionsAnswered = questionsAnswered + 1;
@@ -42,15 +42,15 @@ while (isRunning === true) {
         }
       }
       const catProcent = ((scores.cat / questionsAndAnswersData[0].Points.Cat.maxpoints) * 100);
-      const kaninProcent = ((scores.rabit / questionsAndAnswersData[0].Points.Rabit.maxpoints) * 100);
+      const rabbitProcent = ((scores.rabbit / questionsAndAnswersData[0].Points.Rabbit.maxpoints) * 100);
       const fiskProcent = ((scores.fish / questionsAndAnswersData[0].Points.Fish.maxpoints) * 100);
       const hundProcent = ((scores.dog / questionsAndAnswersData[0].Points.Dog.maxpoints) * 100);
       let highestResultPoints;
       let highestResultProcent;
-      let scoresArray = [scores.cat, scores.rabit, scores.fish, scores.dog];
+      let scoresArray = [scores.cat, scores.rabbit, scores.fish, scores.dog];
       scoresArray = scoresArray.sort((b, a) => a - b)
       let catRead = false;
-      let rabitRead = false;
+      let rabbitRead = false;
       let fishRead = false;
       let dogRead = false;
       for (let i = 0; i < scoresArray.length; i++) {
@@ -62,12 +62,12 @@ while (isRunning === true) {
             highestResultProcent = catProcent;
           }
         }
-        if (scoresArray[i] === scores.rabit && rabitRead === false) {
-          rabitRead = true;
-          console.log(`Kanin blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${kaninProcent} %`);
+        if (scoresArray[i] === scores.rabbit && rabbitRead === false) {
+          rabbitRead = true;
+          console.log(`Kanin blev ${i + 1}, med ${scoresArray[i]} poäng vilket är ${rabbitProcent} %`);
           if (i === 0) {
             highestResultPoints = "Kanin: " + scoresArray[i];
-            highestResultProcent = kaninProcent;
+            highestResultProcent = rabbitProcent;
           }
         }
         if (scoresArray[i] === scores.fish && fishRead === false) {
