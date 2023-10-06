@@ -39,6 +39,7 @@ while (isRunning === true) {
         } else {
           console.log(`Något blev fel eller så var ditt svar inte giltigt, frågeformuläret måstet tyvärr startas om`);
           prompt(`tryck valfri knapp för att fortsätta`);
+          questionsAnswered = 0;
           break;
         }
       }
