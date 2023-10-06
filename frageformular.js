@@ -103,6 +103,7 @@ while (isRunning === true) {
           if (err) throw err;
           console.log(`data written to file`)
         });
+        questionsAnswered = 0;
       }
       break;
     case 2:
